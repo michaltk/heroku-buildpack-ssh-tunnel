@@ -14,8 +14,8 @@ fi
 if [ ! -f "`which autossh`" ]
 then
   echoerr "autossh not installed"
-  exit 0
-fi
+else
+
 
 mkdir -p ${HOME}/.ssh
 chmod 700 ${HOME}/.ssh
@@ -86,3 +86,4 @@ do
   M=$(($M + 2))
 
 done
+fi
